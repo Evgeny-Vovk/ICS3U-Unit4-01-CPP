@@ -33,7 +33,7 @@ int main() {
         }
         std::cout << " = " << answer;
     } catch (std::invalid_argument) {
-        std::cout << "Invalid input"
+        std::cout << "Invalid input,"
                   << " please try again following the requirements";
     }
 
