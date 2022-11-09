@@ -23,17 +23,18 @@ int main() {
     std::cout << "\n";
     try {
         numberAsInt = std::stoi(inputNumber);
-        while (counter < numberAsInt){
+        while (counter < numberAsInt) {
             counter += 1;
             answer += counter;
             std::cout << counter;
-            if (counter < numberAsInt){
+            if (counter < numberAsInt) {
                 std::cout << " + ";
             }
         }
         std::cout << " = " << answer;
     } catch (std::invalid_argument) {
-        std::cout << "Invalid input, please try again following the requirements";
+        std::cout << "Invalid input"
+                  << " please try again following the requirements";
     }
 
     std::cout << "\n\n\nDone.\n";
